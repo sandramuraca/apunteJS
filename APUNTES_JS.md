@@ -19,7 +19,7 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 ***
 
 # ¿Qué es JavaScript?
-===
+
 JavaScript se creó inicialmente para "dar vida a las páginas web". 
 Existía un necesidad de generar *interacción* con el usuario.
 Los *programas en este idioma se denominan scripts* . Pueden escribirse directamente en el HTML de una página web y ejecutarse automáticamente a medida que se carga la página.
@@ -42,11 +42,41 @@ Hay al menos tres cosas buenas sobre JavaScript:
 ## Formas de vincular HTML con JS:
 
 1. Dentro de un archivo HTML una etiqueta <script> </script> indica un cambio de lenguaje, todo lo que esté dentro de ella estará en JS, se coloca dentro del body y 🚫 no se anidan 🚫.
-
+~~~
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //todo lo que se escriba aqui es JS
+    </script>
+</body>
+</html>
+~~~
 2. Tambien se puede linkear el index.html con un archivo app.js externo mediante el atributo src.
+El archivo app.js tiene que estar en la misma carpeta que el html, o si esta por fuera indicar la ruta que corresponda.
 
-
-
-
+~~~
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
+~~~
 
 
