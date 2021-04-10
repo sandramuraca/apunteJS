@@ -79,4 +79,9 @@ El archivo app.js tiene que estar en la misma carpeta que el html, o si esta por
 </html>
 ~~~
 
+# Todo lo que se escriba en JS puede leerse en la “consola”.
+¿Cómo?
+Abriendo el archivo HTML con live server, haciendo click derecho “Inspeccionar”:
+![image](./consola.png)
+
 
