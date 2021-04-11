@@ -84,4 +84,105 @@ El archivo app.js tiene que estar en la misma carpeta que el html, o si esta por
 Abriendo el archivo HTML con live server, haciendo click derecho “Inspeccionar”:
 ![image](./consola.png)
 
+¿Cómo escribí ese código en JS?
+~~~
+<script>
+   console.log("hola! soy un string y quiero que me veas por la                             consola");
+</script>
+~~~
+La instrucción 
+~~~
+console.log()
+~~~
+te permite ver lo que escribiste entre paréntesis (luego vemos qué tipo de dato es).
+y si no lo quiero ver en la consola?🤔
+~~~
+<script>
+    alert("hola! soy un string y quiero que me veas por la consola");
+</script>
+~~~
+La instrucción
+~~~
+alert()
+~~~
+muestra un mensaje en el browser:
+![image](./alert.png)
+
+Otra instrucción muy común es 
+~~~
+prompt, 
+~~~
+¿que hace? ❓
+Abre un cuadro de diálogo con el usuario, donde le puedo hacer una pregunta, y su respuesta se convierte en un “dato”.
+Pero el ~~~prompt~~~ no guarda el dato en ninguna parte, entonces le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio su respuesta?🤔
+🔴para eso vamos a utilizar las 
+# 🚩VARIABLES🚩
+Ejemplo:
+~~~
+<script>
+    prompt("cual es tu nombre?");
+</script>
+~~~
+![image](./prompt.png)
+
+En el ejemplo anterior si el usuario me responde su nombre, si no lo tengo almacenado en una VARIABLE, lo pierdo, entonces:
+~~~
+<script>
+    prompt("cual es tu nombre?");
+</script>
+~~~
+![image](./promptNombre.png)
+Puedo verlo en la consola:
+![image](./consolaNombre.png)
+
+Para entender esto 👆 tenemos que entender lo que es una *VARIABLE*:
+Es un *espacio de memoria* (como una cajita 📦) donde se almacenan distintos tipos de datos.
+Siempre tiene un *nombre que las identifica* que debe ser unico.
+Se las puede llamar de 3 formas:
+* var : en desuso
+* let: puede cambiar su valor (ejemplo del nombre, si entra otro usuario, el nombre va a ser otro).
+* const: no puede cambiar su valor.
+
+Declarar e inicializar una variable es asignarle: 
+* Nombre (declarar)
+* Valor (entiéndase valor al dato que va a guardar) -> (inicializar)
+
+Ejemplo:
+~~~
+<script>
+    let nombre = "Sandra";
+</script>
+~~~
+
+En este caso el nombre de la variable es “nombre” y el valor es “Sandra”. 
+Como se que el valor es ese? porque con el *signo =* se le asignan valor a las variables, se lo llama *OPERADOR DE ASIGNACIÓN*.
+
+Cada vez que se termina de declarar una sentencia para cerrarla se debe colocar un punto y coma ( ; ) ❗❗❗
+
+Las variables se pueden declarar todas en una misma línea separadas por comas:
+~~~
+<script>
+    let nombre = "Sandra"; edad= 42; nacionalidad = "argentina";
+</script>
+~~~
+
+En este ejemplo hay 3 variables: nombre, edad, nacionalidad.
+Y los valores son: “Sandra”, 42, “argentina”.
+🤪 por que “Sandra” y “argentina” están entre comillas y 42 no???? 👀
+Porque todo lo que es texto va entre comillas, lo que es número no  ❗❗❗ y esto es así porque esos datos son de distinto *TIPO*.
+
+# La importancia del nombre de la variables:
+* Su nombre tiene que representar a los datos que almacena.
+* Debe ser legibles por humanos.
+* Evitar usar abreviaturas o letras sueltas.
+* Tenga en cuenta las definiciones de su equipo de conceptos básicos y atengase a ellas, ejemplo: Usuario = user.
+* Caracteres disponibles: letras del alfabeto, menos la ñ; números, $, guión bajo.
+* No pueden iniciar con un número.
+* JS tiene palabras reservadas que no se pueden utilizar para nombrar variables, ej: *if, for, function*.
+
+# Formas de escribir una variable:
+* camelCase: primera letra en min y la primer letra de la segunda palabra en MAY.
+* snake_case: palabras separadas por un guion bajo
+* PascalCase: primer letra de la primer palabra en MAY y primer letra de la segunda palabra en MAY.
+
 
