@@ -10,7 +10,7 @@ Este apunte fue realizado con material obtenido en:
 Cursando la certificación de FrontEnd, me encontré numerosas veces con un sentimiento de frustración y enojo, por no entender algunas cosas o no encontrar material simple.
 Bueno, como no encontre un apunte con esas características... lo hice.
 
-Este archivo inició en un word en Drive, y como ca creciendo y mutando, lo pase a este .md para poder tenerlo siempre actualizado y que este disponible para aquel que puediera necesitarlo.
+Este archivo inició en un Word en Drive, y como ca creciendo y mutando, lo pase a este .md para poder tenerlo siempre actualizado y que este disponible para aquel que puediera necesitarlo.
 
 ### Objetivo:
 Este apunte es una especie de "machete" de los conceptos principaes de JS, el A B C, para principiantes.
@@ -79,7 +79,7 @@ El archivo app.js tiene que estar en la misma carpeta que el html, o si esta por
 </html>
 ~~~
 
-# Todo lo que se escriba en JS puede leerse en la “consola”.
+### Todo lo que se escriba en JS puede leerse en la “consola”.
 ¿Cómo?
 Abriendo el archivo HTML con live server, haciendo click derecho “Inspeccionar”:
 ![image](./consola.png)
@@ -87,7 +87,7 @@ Abriendo el archivo HTML con live server, haciendo click derecho “Inspeccionar
 ¿Cómo escribí ese código en JS?
 ~~~
 <script>
-   console.log("hola! soy un string y quiero que me veas por la                             consola");
+   console.log("hola! soy un string y quiero que me veas por la consola");
 </script>
 ~~~
 La instrucción 
@@ -95,7 +95,8 @@ La instrucción
 console.log()
 ~~~
 te permite ver lo que escribiste entre paréntesis (luego vemos qué tipo de dato es).
-y si no lo quiero ver en la consola?🤔
+
+Y si no lo quiero ver en la consola?🤔
 ~~~
 <script>
     alert("hola! soy un string y quiero que me veas por la consola");
@@ -112,11 +113,12 @@ Otra instrucción muy común es
 ~~~
 prompt, 
 ~~~
-¿que hace? ❓
+que hace❓
 Abre un cuadro de diálogo con el usuario, donde le puedo hacer una pregunta, y su respuesta se convierte en un “dato”.
-Pero el ~~~prompt~~~ no guarda el dato en ninguna parte, entonces le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio su respuesta?🤔
+Pero el *prompt* no guarda el dato en ninguna parte, entonces... le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio en su respuesta?🤔
+
 🔴para eso vamos a utilizar las 
-# 🚩VARIABLES🚩
+### 🚩VARIABLES🚩
 Ejemplo:
 ~~~
 <script>
@@ -136,8 +138,11 @@ Puedo verlo en la consola:
 ![image](./consolaNombre.png)
 
 Para entender esto 👆 tenemos que entender lo que es una *VARIABLE*:
+
 Es un *espacio de memoria* (como una cajita 📦) donde se almacenan distintos tipos de datos.
+
 Siempre tiene un *nombre que las identifica* que debe ser unico.
+
 Se las puede llamar de 3 formas:
 * var : en desuso
 * let: puede cambiar su valor (ejemplo del nombre, si entra otro usuario, el nombre va a ser otro).
@@ -168,10 +173,12 @@ Las variables se pueden declarar todas en una misma línea separadas por comas:
 
 En este ejemplo hay 3 variables: nombre, edad, nacionalidad.
 Y los valores son: “Sandra”, 42, “argentina”.
-🤪 por que “Sandra” y “argentina” están entre comillas y 42 no???? 👀
-Porque todo lo que es texto va entre comillas, lo que es número no  ❗❗❗ y esto es así porque esos datos son de distinto *TIPO*.
 
-# La importancia del nombre de la variables:
+🤪 por que “Sandra” y “argentina” están entre comillas y 42 no???? 👀
+
+Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* no  ❗❗❗ y esto es así porque esos datos son de distinto *TIPO*.
+
+### La importancia del nombre de la variables:
 * Su nombre tiene que representar a los datos que almacena.
 * Debe ser legibles por humanos.
 * Evitar usar abreviaturas o letras sueltas.
@@ -180,9 +187,96 @@ Porque todo lo que es texto va entre comillas, lo que es número no  ❗❗❗ y
 * No pueden iniciar con un número.
 * JS tiene palabras reservadas que no se pueden utilizar para nombrar variables, ej: *if, for, function*.
 
-# Formas de escribir una variable:
+### Formas de escribir una variable:
 * camelCase: primera letra en min y la primer letra de la segunda palabra en MAY.
 * snake_case: palabras separadas por un guion bajo
 * PascalCase: primer letra de la primer palabra en MAY y primer letra de la segunda palabra en MAY.
+
+## TIPOS DE DATOS:
+
+* STRINGS: cadena de texto
+~~~
+<script>
+    let texto = "Un String es una cadena de texto";
+    let nombre = "Sandra";
+</script>
+~~~
+
+* NÚMEROS
+~~~
+<script>
+    let edad = 42;
+    let edad = "42"
+</script>
+~~~
+
+El número va 👀SIEMPRE SIN COMILLAS👀, en el segundo caso lo interpreta como texto.
+
+Pueden ser:
+
+* Positivos
+* Negativos
+* Decimales
+* Con ellos se pueden realizar operaciones matemáticas ➕➖➗✖
+
+* BOOLEAN. valor “true” y “false”.✔❌
+* UNDEFINED: indefinido, declarar una variable y no asignarle ningún valor.
+~~~
+<script>
+    let nombre 
+</script>
+~~~
+![image](./indefinido.png)
+
+* NULL: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
+* NAN: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
+
+### COMILLAS PARA DECLARAR UNA VARIABLE:
+Se pueden usar:
+* comillas dobles: “ ”  let nombre = “Sandra”;
+* comillas simples: ‘ ‘   let nombre = ‘Sandra’; (alt+39)
+* backticks: ` ` let nombre = `Sandra`; (alt+96)
+Las backticks se utilizan para una forma particular de *CONCATENAR*.
+
+### Que es CONCATENAR?:
+Unir dos o más cadenas de texto y datos.
+Se puede concatenar con el signo + (opción 1), o utilizando ` ` y ${} (opción2)
+Ejemplo:
+1. 
+~~~
+let nombre = "Sandra";
+let apellido = "Muraca";
+let edad = 42;
+ 
+alert ("hola soy" + nombre + "" + apellido + "y tengo" + edad + "" + "soy argentina y estudio programación");
+~~~
+
+2. 
+~~~
+let nombre = "Sandra";
+let apellido = "Muraca";
+let edad = 42;
+ 
+alert (`hola soy ${nombre} ${apellido}y tengo ${edad} soy argentina y estudio programación`);
+~~~
+
+El resultado de ambas opciones es el mismo:
+
+![image](./tipoComillas.png)
+
+### OPERADORES MATEMÁTICOS:
+Para realizar operaciones matemáticas utilizamos los siguientes signos:
+
+(+) SUMA
+(-) RESTA
+(/) DIVISIÓN
+(*) MULTIPLICACIÓN
+(%) RESTO
+
+Existen otros operadores, como el de potenciación, decremento e incremento.
+
+### Links a Ejercicios con los conceptos vistos:
+* [Introducción a JS](https://github.com/sandramuraca/introduccionJS)
+* [Variables, Datos, Operadores](https://github.com/sandramuraca/VARIABLES_OPERADORES_DATOS)
 
 
