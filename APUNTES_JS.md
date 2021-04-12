@@ -16,6 +16,8 @@ Este archivo inició en un Word en Drive, y como ca creciendo y mutando, lo pase
 Este apunte es una especie de "machete" de los conceptos principaes de JS, el A B C, para principiantes.
 Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 
+<a name="indice"></a>
+
 ## INDICE 📑
 * [INTRO:](#intro)
 - Que es JS?
@@ -53,6 +55,11 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 * [FUNCIONES](#funciones)
 
 * [DOM](#dom)
+    - Selectores
+    - Métodos
+    - ClassList
+    - Scope
+    - Eventos
 ***
 <a name="intro"></a>
 # ¿Qué es JavaScript?
@@ -331,6 +338,8 @@ Existen otros operadores, como el de potenciación, decremento e incremento.
 ### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
 * [Introducción a JS](https://github.com/sandramuraca/introduccionJS)
 * [Variables, Datos, Operadores](https://github.com/sandramuraca/VARIABLES_OPERADORES_DATOS)
+
+🔼 [VOLVER AL INDICE](#indice)
 ***
 <a name="objetos"></a>
 🚩OBJETOS🚩
@@ -503,6 +512,8 @@ El `default` es opcional, son las instrucciones que se ejecutan si no se verific
 ### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
 * [Ejercitación Condicionales](https://github.com/sandramuraca/ejercicios_condicionales)
 
+🔼 [VOLVER AL INDICE](#indice)
+
 <a name="funciones"></a>
 
 ### 🔴 FUNCIONES:
@@ -645,3 +656,5 @@ event.preventDefault();
 ### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
 * [Ejercitación DOM](https://github.com/sandramuraca/ejerciciosDOM)
 * [Ejercitación Eventos](https://github.com/sandramuraca/ejercicios_eventos)
+
+🔼 [VOLVER AL INDICE](#indice)
