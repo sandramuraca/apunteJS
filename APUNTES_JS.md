@@ -49,6 +49,8 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
     - Operadores Lógicos
 
 * [SWITCH](#switch)
+
+* [FUNCIONES](#funciones)
 ***
 <a name="intro"></a>
 # ¿Qué es JavaScript?
@@ -455,7 +457,7 @@ y también los **OPERADORES LÓGICOS**:
 
 💡 LOS CONDICIONALES PERMITEN TOMAR DECISIONES RESPECTO DE QUÉ CAMINO VA A TOMAR MI CODIGO SI PASA UNA COSA U OTRA.
 
-<a name="swirch"></a>
+<a name="switch"></a>
 
 🚩SWITCH🚩
 
@@ -488,7 +490,29 @@ let diaDeLaSemana = Number(prompt ("Ingrese un número, le diremos a que dia de 
         }
 ~~~
 
-El default es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
+El **default** es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
 
+### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
+* [Ejercitación Condicionales](https://github.com/sandramuraca/ejercicios_condicionales)
 
+<a name="funciones"></a>
+
+### FUNCIONES:
+
+Es un bloque de código **reutilizable**.
+Tipos:
+* Default → ya vienen con JS.
+* Personalizadas → la hace el programador
+Estructura de la *FUNCIÓN*:
+
+![image](./img/funciones.png)
+
+* La función tiene que realizar una acción (instrucciones)  con algo (parámetro).
+* Los parámetros son datos.
+* El nombre de la función tiene que ser corto y descriptivo.
+* Tiene que hacer una sola cosa y hacerla bien.
+* Para declarar la función se utiliza la palabra reservada function.
+* Para poder “ejecutarla” tiene que estar declarada, se ejecuta o “llama” utilizando el nombre de esa función.
+
+Ejemplo:
 
