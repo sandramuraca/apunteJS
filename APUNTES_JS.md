@@ -1,4 +1,4 @@
-# APUNTES JS
+# APUNTES JS 📚
 
 Este apunte fue realizado con material obtenido en:
 - Clases curso Desarrollo Front End - ADA 7ma.
@@ -16,8 +16,18 @@ Este archivo inició en un Word en Drive, y como ca creciendo y mutando, lo pase
 Este apunte es una especie de "machete" de los conceptos principaes de JS, el A B C, para principiantes.
 Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 
-***
+## INDICE 📑
+* [INTRO:](#intro)
+- Que es JS?
+- Características
+- Formas de vincular HTML y JS
 
+* [INSTRUCCIONES BASICAS:](#instrucciones)
+- console.log
+- alert
+
+***
+<a name="intro"></a>
 # ¿Qué es JavaScript?
 
 JavaScript se creó inicialmente para "dar vida a las páginas web". 
@@ -79,10 +89,11 @@ El archivo app.js tiene que estar en la misma carpeta que el html, o si esta por
 </html>
 ~~~
 
+<a name="instrucciones"></a>
 ### Todo lo que se escriba en JS puede leerse en la “consola”.
 ¿Cómo?
 Abriendo el archivo HTML con live server, haciendo click derecho “Inspeccionar”:
-![image](./consola.png)
+![image](./img/consola.png)
 
 ¿Cómo escribí ese código en JS?
 ~~~
@@ -107,7 +118,7 @@ La instrucción
 alert()
 ~~~
 muestra un mensaje en el browser:
-![image](./alert.png)
+![image](./img/alert.png)
 
 Otra instrucción muy común es 
 ~~~
@@ -117,15 +128,15 @@ que hace❓
 Abre un cuadro de diálogo con el usuario, donde le puedo hacer una pregunta, y su respuesta se convierte en un “dato”.
 Pero el *prompt* no guarda el dato en ninguna parte, entonces... le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio en su respuesta?🤔
 
-🔴para eso vamos a utilizar las 
-### 🚩VARIABLES🚩
+🔴para eso vamos a utilizar las:
+### VARIABLES
 Ejemplo:
 ~~~
 <script>
     prompt("cual es tu nombre?");
 </script>
 ~~~
-![image](./prompt.png)
+![image](./img/prompt.png)
 
 En el ejemplo anterior si el usuario me responde su nombre, si no lo tengo almacenado en una VARIABLE, lo pierdo, entonces:
 ~~~
@@ -133,11 +144,12 @@ En el ejemplo anterior si el usuario me responde su nombre, si no lo tengo almac
     prompt("cual es tu nombre?");
 </script>
 ~~~
-![image](./promptNombre.png)
+![image](./img/promptNombre.png)
 Puedo verlo en la consola:
-![image](./consolaNombre.png)
+![image](./img/consolaNombre.png)
 
-Para entender esto 👆 tenemos que entender lo que es una *VARIABLE*:
+Para entender esto 👆 tenemos que entender lo que es una 
+🚩VARIABLE🚩
 
 Es un *espacio de memoria* (como una cajita 📦) donde se almacenan distintos tipos de datos.
 
@@ -226,7 +238,7 @@ Pueden ser:
     let nombre 
 </script>
 ~~~
-![image](./indefinido.png)
+![image](./img/indefinido.png)
 
 * NULL: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
 * NAN: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
@@ -242,6 +254,7 @@ Las backticks se utilizan para una forma particular de *CONCATENAR*.
 Unir dos o más cadenas de texto y datos.
 Se puede concatenar con el signo + (opción 1), o utilizando ` ` y ${} (opción2)
 Ejemplo:
+
 1. 
 ~~~
 let nombre = "Sandra";
@@ -262,7 +275,7 @@ alert (`hola soy ${nombre} ${apellido}y tengo ${edad} soy argentina y estudio pr
 
 El resultado de ambas opciones es el mismo:
 
-![image](./tipoComillas.png)
+![image](./img/tipoComillas.png)
 
 ### OPERADORES MATEMÁTICOS:
 Para realizar operaciones matemáticas utilizamos los siguientes signos:
@@ -278,5 +291,7 @@ Existen otros operadores, como el de potenciación, decremento e incremento.
 ### Links a Ejercicios con los conceptos vistos:
 * [Introducción a JS](https://github.com/sandramuraca/introduccionJS)
 * [Variables, Datos, Operadores](https://github.com/sandramuraca/VARIABLES_OPERADORES_DATOS)
+
+
 
 
