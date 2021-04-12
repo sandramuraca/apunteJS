@@ -637,3 +637,4 @@ event.preventDefault();
 
 ### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
 * [Ejercitación DOM](https://github.com/sandramuraca/ejerciciosDOM)
+* [Ejercitación Eventos](https://github.com/sandramuraca/ejercicios_eventos)
