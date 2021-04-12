@@ -51,6 +51,8 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 * [SWITCH](#switch)
 
 * [FUNCIONES](#funciones)
+
+* [DOM](#dom)
 ***
 <a name="intro"></a>
 # ¿Qué es JavaScript?
@@ -515,4 +517,123 @@ Estructura de la *FUNCIÓN*:
 * Para poder “ejecutarla” tiene que estar declarada, se ejecuta o “llama” utilizando el nombre de esa función.
 
 Ejemplo:
+~~~
+function restar (num1, num2){
+            let resultado = (num1 - num2)
+            alert (resultado)
+        }
 
+        restar (3, 2);
+        restar (10, 5.5);
+        restar (3, 5);
+~~~
+
+### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
+* [Ejercitación Funciones](https://github.com/sandramuraca/ejercicios_funciones)
+
+***
+
+<a name="dom"></a>
+
+## DOM:
+
+**Document Object Model** → representación estructural del documento HTML, que nos permite modificar su contenido // ARBOL BINARIO
+
+![image](./img/dom.png)
+
+🚩SELECTORES Y MÉTODOS🚩
+
+Cada etiqueta representa un “nodo”.
+Para poder modificar e interactuar con los elementos del HTML hay que usar “selectores” para poder identificar al elemento sobre el cual quiere efectuar el cambio o interacción.
+¿Cómo puedo seleccionar un elemento?🤔
+
+**Seleccionandolo por**:
+
+* su id: document.getElementById("#titulo");
+* su clase:document.getElementsByClassName(".parrafo");
+* su etiqueta: let listaDesodenada = document.getElementsByTagName("ul");
+
+Estos selectores corresponden a las siguientes etiquetas de un html:
+
+![image](./img/dom2.png)
+
+Con el id estamos seleccionando al <h1>, con la clase al <p> y con la etiqueta al <ul>
+Una vez que los elementos están **“seleccionados”** utilizamos **MÉTODOS** para poder modificarlos.
+* miVariable.innerHTML → puedo insertar otros elementos
+* miVariable.textContent→ inserto texto
+* miVariable.style→ inserta atributo “style” madifica estilos en linea
+
+### AGREGAR CLASES DESDE JS:
+classList es una propiedad de JS que sirve para manipular clases a un elemento del DOM:
+* miVariable.classList.add → agrega una clase
+* miVariable.classList.remove → quita una clase
+* miVariable.classList.toggle → busca una clase, si no la tiene la agrega, si la tiene la quita.
+
+### SCOPE
+Se considera el ámbito de alcance de una variables, si la variable se declara fuera de una función se puede reutilizar dentro de todas las funciones que se escriban luego.
+Si se declara dentro de una función solo será válida dentro de esa función.
+Ej:
+
+![image](./img/scope.png)
+
+En el ejemplo la variable “container” está declarada fuera de las funciones, por eso la puedo reutilizar en todas, caso contrario tendría que declararla dentro de cada función.
+
+### EVENTOS
+Podemos definirlos como: Interacciones que realizan los usuarios finales.💻
+Es la manera de controlar las acciones del usuario y definir un comportamiento de la página cuando estos se produzcan. Cuando un usuario visita una web e interactúa con ella se producen eventos y con JS podemos controlar lo que queremos que ocurra cuando esos eventos se produzcan.
+Evento = hacer click en un botón, escribir en un campo de texto, cambiar de página
+
+* **Tipo de Evento**: es el nombre del evento que ocurre (por ejemplo click). 
+Es un String con el nombre del tipo del evento ---> *“click” - “keypress”*
+* **Target del evento**: es el objeto al cual le ocurre el evento o que está asociado a dicho evento (puede ser cualquier nodo del html).
+* **Manejador de evento**: es una función (callback) que maneja o responde a un evento (Se lo conoce también como listener). función que se invoca cuando sucede el evento.
+
+~~~
+/*1. armar html
+2. crear 3 botones diferentes
+3. agregar un evento a cada uno
+4. el evento tiene que disparar un alert*/
+ 
+const primerBoton = document.querySelector("#boton1");
+const segundoBoton = document.querySelector("#boton2");
+const tercerBoton = document.querySelector("#boton3");
+ 
+primerBoton.addEventListener("click", () => {
+    alert ("usted a tocado el boton 1");
+});
+segundoBoton.addEventListener("click", () => {
+    alert ("usted a tocado el boton 2");
+});
+tercerBoton.addEventListener("click", () => {
+    alert ("usted a tocado el boton 3");
+});
+~~~
+**Objeto del evento**: es un objeto asociado con un evento en particular que contiene detalles sobre el evento. 
+Este objeto es pasado como parámetro de la función que maneja el evento. 
+Las propiedades de este objeto cambian según el tipo de evento que sea. 
+Ejemplo: puedo saber que tecla se presiona o posición del mouse dependiendo del tipo de evento que maneje.
+**Lista de eventos que se pueden utilizar**:
+* onchange
+* onclick / ondblclick / onmousedown / onmousedownonmouseover / onmouseout
+* onkeydown / onkeypress / onkeyup
+* onload
+* onresize
+* onscroll
+* oninput
+* onfocus / onblur
+
+📢 Para indicarle a un objeto que tiene que suceder algo cuando el usuario realice un evento ese objeto tiene que estar *“selccionado”* en el js con querySelector(“#idDelObjeto”).
+ 
+**stopPropagation** → evita la propagación del evento a objetos que que están dentro de un objeto al cual le indique que realice determinada acción ante un evento. Ejemplo si soy una indicación a un formulario, los elementos dentro de este, por propagación también realizarán esa indicación.
+ 
+**preventDefault** → evita que el elemento seleccionado realice la acción que por defecto realiza, Ejemplo, recarga de la página en el botón *submit*.
+
+~~~
+event.stopPropagation();
+// evita que se ejecute el evento del form ya que el boton esta dentro por default lo ejecutaria
+event.preventDefault(); 
+// esto evita que la accion que por defecto realiza el elemento se lleve a cabo
+~~~
+
+### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
+* [Ejercitación DOM](https://github.com/sandramuraca/ejerciciosDOM)
