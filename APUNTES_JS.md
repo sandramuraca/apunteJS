@@ -22,9 +22,23 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 - Características
 - Formas de vincular HTML y JS
 
-* [INSTRUCCIONES BASICAS:](#instrucciones)
+* [INSTRUCCIONES BÁSICAS:](#instrucciones)
 - console.log
 - alert
+
+* [VARIABLES](#variables)
+* [Como nombrar una varuable?](#nombre_variable)
+* [TIPOS DE DATOS](#tipo_dato)
+- Strings
+- Numbrer
+- Boolean
+- Undefined
+- Null
+- Nan
+- Que comillas usar?
+
+* [CONCATENAR](#concat)
+* [OPERADORES MATEMATICOS](#op_mat)
 
 ***
 <a name="intro"></a>
@@ -129,6 +143,7 @@ Abre un cuadro de diálogo con el usuario, donde le puedo hacer una pregunta, y 
 Pero el *prompt* no guarda el dato en ninguna parte, entonces... le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio en su respuesta?🤔
 
 🔴para eso vamos a utilizar las:
+<a name="variables"></a>
 ### VARIABLES
 Ejemplo:
 ~~~
@@ -148,7 +163,7 @@ En el ejemplo anterior si el usuario me responde su nombre, si no lo tengo almac
 Puedo verlo en la consola:
 ![image](./img/consolaNombre.png)
 
-Para entender esto 👆 tenemos que entender lo que es una 
+Para entender esto 👆 tenemos que entender lo que es una
 🚩VARIABLE🚩
 
 Es un *espacio de memoria* (como una cajita 📦) donde se almacenan distintos tipos de datos.
@@ -190,6 +205,8 @@ Y los valores son: “Sandra”, 42, “argentina”.
 
 Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* no  ❗❗❗ y esto es así porque esos datos son de distinto *TIPO*.
 
+<a name="nombre_variable"></a>
+
 ### La importancia del nombre de la variables:
 * Su nombre tiene que representar a los datos que almacena.
 * Debe ser legibles por humanos.
@@ -204,6 +221,7 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 * snake_case: palabras separadas por un guion bajo
 * PascalCase: primer letra de la primer palabra en MAY y primer letra de la segunda palabra en MAY.
 
+<a name="tipo_dato"></a>
 ## TIPOS DE DATOS:
 
 * STRINGS: cadena de texto
@@ -250,6 +268,7 @@ Se pueden usar:
 * backticks: ` ` let nombre = `Sandra`; (alt+96)
 Las backticks se utilizan para una forma particular de *CONCATENAR*.
 
+<a name="concat"></a>
 ### Que es CONCATENAR?:
 Unir dos o más cadenas de texto y datos.
 Se puede concatenar con el signo + (opción 1), o utilizando ` ` y ${} (opción2)
@@ -276,6 +295,8 @@ alert (`hola soy ${nombre} ${apellido}y tengo ${edad} soy argentina y estudio pr
 El resultado de ambas opciones es el mismo:
 
 ![image](./img/tipoComillas.png)
+
+<a name="op_mat"></a>
 
 ### OPERADORES MATEMÁTICOS:
 Para realizar operaciones matemáticas utilizamos los siguientes signos:
