@@ -145,13 +145,14 @@ La instrucción
 alert()
 ~~~
 muestra un mensaje en el browser:
+
 ![image](./img/alert.png)
 
 Otra instrucción muy común es 
 ~~~
 prompt, 
 ~~~
-que hace❓
+QUE HACE ❓
 Abre un cuadro de diálogo con el usuario, donde le puedo hacer una pregunta, y su respuesta se convierte en un “dato”.
 Pero el *prompt* no guarda el dato en ninguna parte, entonces... le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio en su respuesta?🤔
 
@@ -182,16 +183,16 @@ Para entender esto 👆 tenemos que entender lo que es una
 
 Es un *espacio de memoria* (como una cajita 📦) donde se almacenan distintos tipos de datos.
 
-Siempre tiene un *nombre que las identifica* que debe ser unico.
+Siempre tiene un *nombre que las identifica* que debe ser único.
 
-Se las puede llamar de 3 formas:
-* var : en desuso
-* let: puede cambiar su valor (ejemplo del nombre, si entra otro usuario, el nombre va a ser otro).
-* const: no puede cambiar su valor.
+**Se las puede nombrar de 3 formas**:
+* **var** : en desuso
+* **let**: puede cambiar su valor (ejemplo del nombre, si entra otro usuario, el nombre va a ser otro).
+* **const**: no puede cambiar su valor.
 
 Declarar e inicializar una variable es asignarle: 
-* Nombre (declarar)
-* Valor (entiéndase valor al dato que va a guardar) -> (inicializar)
+* *Nombre* (declarar)
+* *Valor* (entiéndase valor al dato que va a guardar) -> (inicializar)
 
 Ejemplo:
 ~~~
@@ -201,7 +202,8 @@ Ejemplo:
 ~~~
 
 En este caso el nombre de la variable es “nombre” y el valor es “Sandra”. 
-Como se que el valor es ese? porque con el *signo =* se le asignan valor a las variables, se lo llama *OPERADOR DE ASIGNACIÓN*.
+Como se que el valor es ese? 
+Porque con el *signo =* se le asignan valor a las variables, se lo llama *OPERADOR DE ASIGNACIÓN*.
 
 Cada vez que se termina de declarar una sentencia para cerrarla se debe colocar un punto y coma ( ; ) ❗❗❗
 
@@ -221,7 +223,7 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 
 <a name="nombre_variable"></a>
 
-### La importancia del nombre de la variables:
+### 🔺 La importancia del nombre de la variables:
 * Su nombre tiene que representar a los datos que almacena.
 * Debe ser legibles por humanos.
 * Evitar usar abreviaturas o letras sueltas.
@@ -230,16 +232,16 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 * No pueden iniciar con un número.
 * JS tiene palabras reservadas que no se pueden utilizar para nombrar variables, ej: *if, for, function*.
 
-### Formas de escribir una variable:
+### Formas de escribir una variable ✍:
 * camelCase: primera letra en min y la primer letra de la segunda palabra en MAY.
 * snake_case: palabras separadas por un guion bajo
 * PascalCase: primer letra de la primer palabra en MAY y primer letra de la segunda palabra en MAY.
 
 <a name="tipo_dato"></a>
 
-## TIPOS DE DATOS:
+## TIPOS DE DATOS 📊:
 
-* **STRINGS**: cadena de texto
+* **STRINGS** 📝: cadena de texto
 ~~~
 <script>
     let texto = "Un String es una cadena de texto";
@@ -247,7 +249,7 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 </script>
 ~~~
 
-* **NÚMEROS**:
+* **NÚMEROS** 1⃣ 2⃣ 3⃣:
 ~~~
 <script>
     let edad = 42;
@@ -314,7 +316,7 @@ El resultado de ambas opciones es el mismo:
 
 <a name="op_mat"></a>
 
-### OPERADORES MATEMÁTICOS:
+### OPERADORES MATEMÁTICOS ➕➖➗:
 Para realizar operaciones matemáticas utilizamos los siguientes signos:
 
 (+) SUMA
