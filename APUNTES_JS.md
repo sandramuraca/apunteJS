@@ -157,10 +157,10 @@ QUE HACE ❓
 Abre un cuadro de diálogo con el usuario, donde le puedo hacer una pregunta, y su respuesta se convierte en un “dato”.
 Pero el `prompt` no guarda el dato en ninguna parte, entonces... le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio en su respuesta?🤔
 
-🔴para eso vamos a utilizar las:
+para eso vamos a utilizar las:
 <a name="variables"></a>
 
-### VARIABLES
+### 🔴 VARIABLES
 Ejemplo:
 ~~~
 <script>
@@ -242,7 +242,7 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 
 ## TIPOS DE DATOS 📊:
 
-* `**STRINGS**` 📝: cadena de texto
+* `STRINGS` 📝: cadena de texto
 ~~~
 <script>
     let texto = "Un String es una cadena de texto";
@@ -250,7 +250,7 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 </script>
 ~~~
 
-* `**NÚMEROS**` :
+* `NÚMEROS` :
 ~~~
 <script>
     let edad = 42;
@@ -267,8 +267,8 @@ Los números pueden ser:
 * Decimales
 * Con ellos se pueden realizar operaciones matemáticas ➕➖➗✖
 
-* `**BOOLEAN**`: valor “true” y “false”.✔❌
-* `**UNDEFINED**`: indefinido, declarar una variable y no asignarle ningún valor.
+* `BOOLEAN`: valor “true” y “false”.✔❌
+* `UNDEFINED`: indefinido, declarar una variable y no asignarle ningún valor.
 ~~~
 <script>
     let nombre 
@@ -276,8 +276,8 @@ Los números pueden ser:
 ~~~
 ![image](./img/indefinido.png)
 
-* `**NULL**`: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
-* `**NAN**`: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
+* `NULL`: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
+* `NAN`: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
 
 ### COMILLAS PARA DECLARAR UNA VARIABLE:
 Se pueden usar:
@@ -341,7 +341,7 @@ En construcción 🔧🔨🛠⚙
 🚩ARRAYS🚩
 
 Es una lista de elementos, que  tienen relación entre sí. 
-Se escriben entre corchetes [] → es un tipo de OBJETO.
+Se escriben entre corchetes [ ] → es un tipo de OBJETO.
 Es una forma de agrupar elementos (de cualquier tipo).
 
 Ejemplo:
@@ -498,16 +498,16 @@ let diaDeLaSemana = Number(prompt ("Ingrese un número, le diremos a que dia de 
         }
 ~~~
 
-El `**default**` es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
+El `default` es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
 
 ### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
 * [Ejercitación Condicionales](https://github.com/sandramuraca/ejercicios_condicionales)
 
 <a name="funciones"></a>
 
-### FUNCIONES:
+### 🔴 FUNCIONES:
 
-Es un bloque de código **reutilizable**.
+Es un bloque de código **reutilizable** 🔄.
 Tipos:
 * Default → ya vienen con JS.
 * Personalizadas → la hace el programador
@@ -541,7 +541,7 @@ function restar (num1, num2){
 
 <a name="dom"></a>
 
-## DOM:
+## 🔴 DOM:
 
 **Document Object Model** → representación estructural del documento HTML, que nos permite modificar su contenido // ARBOL BINARIO
 
@@ -563,7 +563,7 @@ Estos selectores corresponden a las siguientes etiquetas de un html:
 
 ![image](./img/dom2.png)
 
-Con el id estamos seleccionando al <h1>, con la clase al <p> y con la etiqueta al <ul>
+Con el id estamos seleccionando al `h1`, con la clase al `p>}` y con la etiqueta al `ul`
 Una vez que los elementos están **“seleccionados”** utilizamos **MÉTODOS** para poder modificarlos.
 * `miVariable.innerHTML` → puedo insertar otros elementos
 * `miVariable.textContent`→ inserto texto
