@@ -12,7 +12,7 @@ Bueno, como no encontre un apunte con esas características... lo hice.
 
 Este archivo inició en un Word en Drive, y como ca creciendo y mutando, lo pase a este .md para poder tenerlo siempre actualizado y que este disponible para aquel que puediera necesitarlo.
 
-### Objetivo:
+### Objetivo🎯
 Este apunte es una especie de "machete" de los conceptos principaes de JS, el A B C, para principiantes.
 Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 
@@ -27,19 +27,28 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 - alert
 
 * [VARIABLES](#variables)
-* [Como nombrar una varuable?](#nombre_variable)
+* [Como nombrar una variable?](#nombre_variable)
 * [TIPOS DE DATOS](#tipo_dato)
-- Strings
-- Numbrer
-- Boolean
-- Undefined
-- Null
-- Nan
-- Que comillas usar?
+    - Strings
+    - Numbrer
+    - Boolean
+    - Undefined
+    - Null
+    - Nan
+    - Que comillas usar?
 
 * [CONCATENAR](#concat)
 * [OPERADORES MATEMATICOS](#op_mat)
+* [OBJETOS](#objetos)
+* [ARRAYS](#arrays)
+* [ESTRUCTURAS DE CONTROL](#control)
+    - if
+    - else if
+    - else
+    - Operadores de comparación
+    - Operadores Lógicos
 
+* [SWITCH](#switch)
 ***
 <a name="intro"></a>
 # ¿Qué es JavaScript?
@@ -269,6 +278,7 @@ Se pueden usar:
 Las backticks se utilizan para una forma particular de *CONCATENAR*.
 
 <a name="concat"></a>
+
 ### Que es CONCATENAR?:
 Unir dos o más cadenas de texto y datos.
 Se puede concatenar con el signo + (opción 1), o utilizando ` ` y ${} (opción2)
@@ -309,10 +319,165 @@ Para realizar operaciones matemáticas utilizamos los siguientes signos:
 
 Existen otros operadores, como el de potenciación, decremento e incremento.
 
-### Links a Ejercicios con los conceptos vistos:
+### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
 * [Introducción a JS](https://github.com/sandramuraca/introduccionJS)
 * [Variables, Datos, Operadores](https://github.com/sandramuraca/VARIABLES_OPERADORES_DATOS)
+***
+<a name="objetos"></a>
+🚩OBJETOS🚩
+En construcción 🔧🔨🛠⚙
 
+<a name="arrays"></a>
+🚩ARRAYS🚩
 
+Es una lista de elementos, que  tienen relación entre sí. 
+Se escriben entre corchetes [] → es un tipo de OBJETO.
+Es una forma de agrupar elementos (de cualquier tipo).
+Ejemplo:
+Array FAMILY es el agrupamiento de las variables de cada integrante de la familia👇
+~~~
+const person1 = {
+            name: `Sandra`,
+            surname: `Muraca`,
+            age: 42 
+        };
+ 
+        const person2 = {
+            name: `Victoria`,
+            surname: `Capella`,
+            age: 13 
+        };
+ 
+        const person3 = {
+            name: `Cristian`,
+            surname: `Rodriguez`,
+            age: 40
+        };
+ 
+        const family = [person1, person2, person3]
+~~~
 
+Los arrays tienen **“índices”** que es la posición de cada elemento que agrupa, el indice siempre arranca en 0.
+Ejemplo:
+~~~
+console.log (family); // aca en el console muestra los 3 elementos con su nro indice
+~~~
+![image](./img/array.png)
+
+El elemento 0 de este array es “Sandra” y así sucesivamente.
+
+~~~
+console.log (family[0]); // aca llamamos al elemento, con todos us componentes, indicado con el nro entre corchetes según el indice
+~~~
+![image](./img/array2.png)
+
+Ese índice se utiliza para llamar a cualquiera de esos elementos desde la consola según su numeración.
+En los arrays importa el orden de los elementos.
+El potencial del arrays está con los **MÉTODOS** que viene por default con JS → son funcionalidades previamente programadas, el más utilizado es “push” →
+nombreDeLaVariable.push()
+
+~~~
+ family.push({
+            name: `gata`,
+            surname: `flora`,
+            age: 7
+        }) 
+        /// de esta manera se agregan elementos dinamicos al array
+~~~
+
+luego de haber agregado un elemeto más al array, se hacemos console.log:
+![image](./img/array3.png)
+
+<a name="control"></a>
+🚩ESTRUCTURAS DE CONTROL🚩
+
+* Podemos controlar el flujo del código y cómo queremos que se ejecute según se cumplan o no algunas condiciones.
+* Se denominan *CONDICIONALES*:
+    * if
+    * else if
+    * else
+
+* **if**: (si entonces) espera una condición **true** para ejecutar el código, si es **false** las instrucciones no se ejecutan y el programa sigue su flujo.
+
+~~~
+ let numero = 2;
+        if (numero >= 2) {
+            alert("El numero es mayor o igual a 2");
+        }
+
+~~~
+![image](./img/if.png)
+
+* **else** (si no) permite controlar que pasa si la condición es falsa, no necesita ningún parámetro, por que se ejecuta cuando el parametro declarado en if es  false.
+
+~~~
+   let numero = 1;
+        if (numero >= 2) {
+            alert("El numero es mayor o igual a 2");
+        } else {
+            alert ("el número no es mayor o igual a 2");
+        }
+~~~
+![image](./img/else.png)
+
+* **else if** (si entonces si) en el tercer camino, es una contra condición.
+
+~~~
+// este es un condicional de mas de 2 caminos
+        const age = 80;
+ 
+        if (age >= 65) {
+            console.log(`soy jubilado`);
+        } else if (age >= 18 && age < 65){
+            console.log(`soy mayor de edad`);
+        } else {
+            console.log(`soy menor de edad`);
+        }
+~~~
+
+Con los**condicionales** se utilizan en los parámetros los **OPERADORES DE COMPARACIÓN**:
+![image](./img/operadoreComparacion.png)
+
+y también los **OPERADORES LÓGICOS**:
+![image](./img/operadoresLogicos.png)
+
+(|| operador barra vertical= alt + 124)
+
+### DFD DE UNA ESTRUCTURA DE CONTROL DE 2 CAMINOS:
+![image](./img/dfd.png)
+
+💡 LOS CONDICIONALES PERMITEN TOMAR DECISIONES RESPECTO DE QUÉ CAMINO VA A TOMAR MI CODIGO SI PASA UNA COSA U OTRA.
+
+<a name="swirch"></a>
+🚩SWITCH🚩
+Forma de anidamiento de múltiples expresiones IF, ELSE IF, ELSE.
+Su uso no siempre es necesario resulta útil para introducir eficiencia y claridad al código.
+En su contenido se quiere evaluar. 
+Ejemplo:
+~~~
+let diaDeLaSemana = Number(prompt ("Ingrese un número, le diremos a que dia de la semana corresponde"));
+ 
+        switch (diaDeLaSemana) {
+            case 1:
+                alert ("Es lunes");
+                break;
+            case 2:
+                alert ("Es martes");
+                break;
+            case 3:
+                alert ("Es miercoles");
+                break;
+            case 4:
+                alert ("Es jueves");
+                break;
+            case 5:
+                alert ("Es Viernes");
+                break;
+            default:
+                alert ("no ha ingresado un numero valido");
+                break;
+        }
+~~~
+
+El default es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
 
