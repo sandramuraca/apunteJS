@@ -1,7 +1,7 @@
 ## PROGRAMACION PARA PRINCIPIANTES (Fernando Herrero)
 ## QUE ES UN LENGUAJE DE PROGRAMACION?
 Es la forma de decirle a una computadora:
-- QUEHACER?
+- QUE HACER?
 - COMO HACERLO?
 Es un idioma intermedio que nos ayuda a transmitir orgenes a una computadora.
 
@@ -31,19 +31,19 @@ Hay lenguajes que se crearon expefificamente para determinadas plataformas.
 - De bajo nivel: binario, lenguaje de máquina, ensamblador.
 - De alto nivel: son lenguajes que ya interpretados, no necesitan un complidador, es decir no necesitan una "traduccion" para que la máquina los entienda.
 
-Complilador:
+### Complilador:
 Toma el codigo y lo traduce a lenguaje de máquina. Ejemplo: ejecutables  .exe
 
-Interpretes:
+### Interpretes:
 Va a tomar todas las lineas de codigo y las va a traducir a lenguaje de máquina, interpreta linea por linea. Ejemplo: navegador web.
 
-# Servidor:
+* Servidor:
 Una computadora con un acceso restringido y centralizado
 
-# Framework:
+* Framework:
 Conjunto de reglas y normas para la correcta utilizacion de un lenguaje
 
-# Cliente:
+* Cliente:
 Computadora que va a ejecutar nuestro programa.
 
 
@@ -52,10 +52,11 @@ Computadora que va a ejecutar nuestro programa.
 - Prdenado y secuencial
 
 ## CICLOS O LOOPS
-Permiten ejecutar las lineas de código una y otra vez de forma consecutiva.
-- While: el codigo se repite indefinidamente hasta que el parametro es FALSE. Ej, un auto puede funcionar indefinidamente hasta que su tanque este vacio.
 
-- For: El codigo se repite tantas veces como yo se lo indique.
+Permiten ejecutar las lineas de código una y otra vez de forma consecutiva.
+- `While`: el codigo se repite indefinidamente hasta que el parametro es FALSE. Ej, un auto puede funcionar indefinidamente hasta que su tanque este vacio.
+
+- `For`: El codigo se repite tantas veces como yo se lo indique.
 Ej: tablas de multiplicar.
 
 
