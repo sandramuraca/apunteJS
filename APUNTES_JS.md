@@ -6,13 +6,13 @@ Este apunte fue realizado con material obtenido en:
 - Notas del curso de Udemy de Fernando Herrera - Programación para principiantes
 - Paginas consultadas en la web.
 
-# Por que hice este apunte?
+## Por que hice este apunte❓
 Cursando la certificación de FrontEnd, me encontré numerosas veces con un sentimiento de frustración y enojo, por no entender algunas cosas o no encontrar material simple.
 Bueno, como no encontre un apunte con esas características... lo hice.
 
 Este archivo inició en un Word en Drive, y como ca creciendo y mutando, lo pase a este .md para poder tenerlo siempre actualizado y que este disponible para aquel que puediera necesitarlo.
 
-### Objetivo🎯
+## Objetivo🎯
 Este apunte es una especie de "machete" de los conceptos principaes de JS, el A B C, para principiantes.
 Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 
@@ -153,6 +153,7 @@ Pero el *prompt* no guarda el dato en ninguna parte, entonces... le haría una p
 
 🔴para eso vamos a utilizar las:
 <a name="variables"></a>
+
 ### VARIABLES
 Ejemplo:
 ~~~
@@ -231,9 +232,10 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 * PascalCase: primer letra de la primer palabra en MAY y primer letra de la segunda palabra en MAY.
 
 <a name="tipo_dato"></a>
+
 ## TIPOS DE DATOS:
 
-* STRINGS: cadena de texto
+* **STRINGS**: cadena de texto
 ~~~
 <script>
     let texto = "Un String es una cadena de texto";
@@ -241,7 +243,7 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 </script>
 ~~~
 
-* NÚMEROS
+* **NÚMEROS**:
 ~~~
 <script>
     let edad = 42;
@@ -251,15 +253,15 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 
 El número va 👀SIEMPRE SIN COMILLAS👀, en el segundo caso lo interpreta como texto.
 
-Pueden ser:
+Los números pueden ser:
 
 * Positivos
 * Negativos
 * Decimales
 * Con ellos se pueden realizar operaciones matemáticas ➕➖➗✖
 
-* BOOLEAN. valor “true” y “false”.✔❌
-* UNDEFINED: indefinido, declarar una variable y no asignarle ningún valor.
+* **BOOLEAN**: valor “true” y “false”.✔❌
+* **UNDEFINED**: indefinido, declarar una variable y no asignarle ningún valor.
 ~~~
 <script>
     let nombre 
@@ -267,8 +269,8 @@ Pueden ser:
 ~~~
 ![image](./img/indefinido.png)
 
-* NULL: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
-* NAN: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
+* **NULL**: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
+* **NAN**: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
 
 ### COMILLAS PARA DECLARAR UNA VARIABLE:
 Se pueden usar:
@@ -325,6 +327,7 @@ Existen otros operadores, como el de potenciación, decremento e incremento.
 ***
 <a name="objetos"></a>
 🚩OBJETOS🚩
+
 En construcción 🔧🔨🛠⚙
 
 <a name="arrays"></a>
@@ -386,10 +389,12 @@ nombreDeLaVariable.push()
 ~~~
 
 luego de haber agregado un elemeto más al array, se hacemos console.log:
+
 ![image](./img/array3.png)
 
 <a name="control"></a>
-🚩ESTRUCTURAS DE CONTROL🚩
+
+### 🚩ESTRUCTURAS DE CONTROL🚩
 
 * Podemos controlar el flujo del código y cómo queremos que se ejecute según se cumplan o no algunas condiciones.
 * Se denominan *CONDICIONALES*:
@@ -435,10 +440,12 @@ luego de haber agregado un elemeto más al array, se hacemos console.log:
         }
 ~~~
 
-Con los**condicionales** se utilizan en los parámetros los **OPERADORES DE COMPARACIÓN**:
+Con los **condicionales** se utilizan en los parámetros los **OPERADORES DE COMPARACIÓN**:
+
 ![image](./img/operadoreComparacion.png)
 
 y también los **OPERADORES LÓGICOS**:
+
 ![image](./img/operadoresLogicos.png)
 
 (|| operador barra vertical= alt + 124)
@@ -449,7 +456,9 @@ y también los **OPERADORES LÓGICOS**:
 💡 LOS CONDICIONALES PERMITEN TOMAR DECISIONES RESPECTO DE QUÉ CAMINO VA A TOMAR MI CODIGO SI PASA UNA COSA U OTRA.
 
 <a name="swirch"></a>
+
 🚩SWITCH🚩
+
 Forma de anidamiento de múltiples expresiones IF, ELSE IF, ELSE.
 Su uso no siempre es necesario resulta útil para introducir eficiencia y claridad al código.
 En su contenido se quiere evaluar. 
@@ -480,4 +489,6 @@ let diaDeLaSemana = Number(prompt ("Ingrese un número, le diremos a que dia de 
 ~~~
 
 El default es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
+
+
 
