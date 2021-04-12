@@ -23,8 +23,8 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 - Formas de vincular HTML y JS
 
 * [INSTRUCCIONES BÁSICAS:](#instrucciones)
-- console.log
-- alert
+- `console.log`
+- `alert`
 
 * [VARIABLES](#variables)
 * [Como nombrar una variable?](#nombre_variable)
@@ -42,11 +42,11 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 * [OBJETOS](#objetos)
 * [ARRAYS](#arrays)
 * [ESTRUCTURAS DE CONTROL](#control)
-    - if
-    - else if
-    - else
-    - Operadores de comparación
-    - Operadores Lógicos
+    - `if`
+    - `else if`
+    - `else`
+    - `Operadores de comparación`
+    - `Operadores Lógicos`
 
 * [SWITCH](#switch)
 
@@ -59,14 +59,14 @@ Para no perderse, ir ordenado y con ejemplos prácticos de algunos ejercicios.
 
 JavaScript se creó inicialmente para "dar vida a las páginas web". 
 Existía un necesidad de generar *interacción* con el usuario.
-Los *programas en este idioma se denominan scripts* . Pueden escribirse directamente en el HTML de una página web y ejecutarse automáticamente a medida que se carga la página.
+Los *programas en este idioma se denominan scripts* . Pueden escribirse directamente en el `HTML` de una página web y ejecutarse automáticamente a medida que se carga la página.
 Los scripts se proporcionan y ejecutan como texto sin formato. 
 No necesitan preparación especial o compilación para ejecutarse.
 Se lo considera un lenguaje de programación seguro. No proporciona acceso de bajo nivel a la memoria o la CPU, ya que se creó inicialmente para navegadores que no lo requieren.
 
 ## ¿Qué hace que JavaScript sea único?
 Hay al menos tres cosas buenas sobre JavaScript:
-- Integración completa con HTML / CSS.
+- Integración completa con `HTML` / `CSS`.
 - Las cosas sencillas se hacen de forma sencilla.
 - Compatible con todos los navegadores principales y habilitado de forma predeterminada.
 
@@ -117,9 +117,10 @@ El archivo app.js tiene que estar en la misma carpeta que el html, o si esta por
 ~~~
 
 <a name="instrucciones"></a>
-### Todo lo que se escriba en JS puede leerse en la “consola”.
+
+### Todo lo que se escriba en JS puede leerse en la `consola`.
 ¿Cómo?
-Abriendo el archivo HTML con live server, haciendo click derecho “Inspeccionar”:
+Abriendo el archivo HTML con live server, haciendo click derecho `Inspeccionar`:
 ![image](./img/consola.png)
 
 ¿Cómo escribí ese código en JS?
@@ -154,7 +155,7 @@ prompt,
 ~~~
 QUE HACE ❓
 Abre un cuadro de diálogo con el usuario, donde le puedo hacer una pregunta, y su respuesta se convierte en un “dato”.
-Pero el *prompt* no guarda el dato en ninguna parte, entonces... le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio en su respuesta?🤔
+Pero el `prompt` no guarda el dato en ninguna parte, entonces... le haría una pregunta a un usuario y luego no podría utilizar ese dato que me dio en su respuesta?🤔
 
 🔴para eso vamos a utilizar las:
 <a name="variables"></a>
@@ -168,7 +169,7 @@ Ejemplo:
 ~~~
 ![image](./img/prompt.png)
 
-En el ejemplo anterior si el usuario me responde su nombre, si no lo tengo almacenado en una VARIABLE, lo pierdo, entonces:
+En el ejemplo anterior si el usuario me responde su nombre, si no lo tengo almacenado en una `VARIABLE`, lo pierdo, entonces:
 ~~~
 <script>
     prompt("cual es tu nombre?");
@@ -186,9 +187,9 @@ Es un *espacio de memoria* (como una cajita 📦) donde se almacenan distintos t
 Siempre tiene un *nombre que las identifica* que debe ser único.
 
 **Se las puede nombrar de 3 formas**:
-* **var** : en desuso
-* **let**: puede cambiar su valor (ejemplo del nombre, si entra otro usuario, el nombre va a ser otro).
-* **const**: no puede cambiar su valor.
+* `var` : en desuso
+* `let`: puede cambiar su valor (ejemplo del nombre, si entra otro usuario, el nombre va a ser otro).
+* `const`: no puede cambiar su valor.
 
 Declarar e inicializar una variable es asignarle: 
 * *Nombre* (declarar)
@@ -201,9 +202,9 @@ Ejemplo:
 </script>
 ~~~
 
-En este caso el nombre de la variable es “nombre” y el valor es “Sandra”. 
+En este caso el *nombre de la variable* es “nombre” y el valor es “Sandra”. 
 Como se que el valor es ese? 
-Porque con el *signo =* se le asignan valor a las variables, se lo llama *OPERADOR DE ASIGNACIÓN*.
+Porque con el `signo =` se le asignan valor a las variables, se lo llama *OPERADOR DE ASIGNACIÓN*.
 
 Cada vez que se termina de declarar una sentencia para cerrarla se debe colocar un punto y coma ( ; ) ❗❗❗
 
@@ -233,15 +234,15 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 * JS tiene palabras reservadas que no se pueden utilizar para nombrar variables, ej: *if, for, function*.
 
 ### Formas de escribir una variable ✍:
-* camelCase: primera letra en min y la primer letra de la segunda palabra en MAY.
-* snake_case: palabras separadas por un guion bajo
-* PascalCase: primer letra de la primer palabra en MAY y primer letra de la segunda palabra en MAY.
+* `camelCase`: primera letra en min y la primer letra de la segunda palabra en MAY.
+* `snake_case`: palabras separadas por un guion bajo
+* `PascalCase`: primer letra de la primer palabra en MAY y primer letra de la segunda palabra en MAY.
 
 <a name="tipo_dato"></a>
 
 ## TIPOS DE DATOS 📊:
 
-* **STRINGS** 📝: cadena de texto
+* `**STRINGS**` 📝: cadena de texto
 ~~~
 <script>
     let texto = "Un String es una cadena de texto";
@@ -249,7 +250,7 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 </script>
 ~~~
 
-* **NÚMEROS** 1⃣ 2⃣ 3⃣:
+* `**NÚMEROS**` :
 ~~~
 <script>
     let edad = 42;
@@ -266,8 +267,8 @@ Los números pueden ser:
 * Decimales
 * Con ellos se pueden realizar operaciones matemáticas ➕➖➗✖
 
-* **BOOLEAN**: valor “true” y “false”.✔❌
-* **UNDEFINED**: indefinido, declarar una variable y no asignarle ningún valor.
+* `**BOOLEAN**`: valor “true” y “false”.✔❌
+* `**UNDEFINED**`: indefinido, declarar una variable y no asignarle ningún valor.
 ~~~
 <script>
     let nombre 
@@ -275,14 +276,14 @@ Los números pueden ser:
 ~~~
 ![image](./img/indefinido.png)
 
-* **NULL**: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
-* **NAN**: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
+* `**NULL**`: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
+* `**NAN**`: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
 
 ### COMILLAS PARA DECLARAR UNA VARIABLE:
 Se pueden usar:
 * comillas dobles: “ ”  let nombre = “Sandra”;
 * comillas simples: ‘ ‘   let nombre = ‘Sandra’; (alt+39)
-* backticks: ` ` let nombre = `Sandra`; (alt+96)
+* backticks: let nombre = `Sandra`; (alt+96)
 Las backticks se utilizan para una forma particular de *CONCATENAR*.
 
 <a name="concat"></a>
@@ -342,7 +343,9 @@ En construcción 🔧🔨🛠⚙
 Es una lista de elementos, que  tienen relación entre sí. 
 Se escriben entre corchetes [] → es un tipo de OBJETO.
 Es una forma de agrupar elementos (de cualquier tipo).
+
 Ejemplo:
+
 Array FAMILY es el agrupamiento de las variables de cada integrante de la familia👇
 ~~~
 const person1 = {
@@ -367,6 +370,7 @@ const person1 = {
 ~~~
 
 Los arrays tienen **“índices”** que es la posición de cada elemento que agrupa, el indice siempre arranca en 0.
+
 Ejemplo:
 ~~~
 console.log (family); // aca en el console muestra los 3 elementos con su nro indice
@@ -404,9 +408,9 @@ luego de haber agregado un elemeto más al array, se hacemos console.log:
 
 * Podemos controlar el flujo del código y cómo queremos que se ejecute según se cumplan o no algunas condiciones.
 * Se denominan *CONDICIONALES*:
-    * if
-    * else if
-    * else
+    * `if`
+    * `else if`
+    * `else`
 
 * **if**: (si entonces) espera una condición **true** para ejecutar el código, si es **false** las instrucciones no se ejecutan y el programa sigue su flujo.
 
@@ -494,7 +498,7 @@ let diaDeLaSemana = Number(prompt ("Ingrese un número, le diremos a que dia de 
         }
 ~~~
 
-El **default** es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
+El `**default**` es opcional, son las instrucciones que se ejecutan si no se verifican ninguno de los casos evaluados.
 
 ### Links a Ejercicios con los conceptos vistos 🏋️‍♀️:
 * [Ejercitación Condicionales](https://github.com/sandramuraca/ejercicios_condicionales)
@@ -551,9 +555,9 @@ Para poder modificar e interactuar con los elementos del HTML hay que usar “se
 
 **Seleccionandolo por**:
 
-* su id: document.getElementById("#titulo");
-* su clase:document.getElementsByClassName(".parrafo");
-* su etiqueta: let listaDesodenada = document.getElementsByTagName("ul");
+* su id: `document.getElementById("#titulo");`
+* su clase: `document.getElementsByClassName(".parrafo");`
+* su etiqueta: `let listaDesodenada = document.getElementsByTagName("ul");`
 
 Estos selectores corresponden a las siguientes etiquetas de un html:
 
@@ -561,15 +565,15 @@ Estos selectores corresponden a las siguientes etiquetas de un html:
 
 Con el id estamos seleccionando al <h1>, con la clase al <p> y con la etiqueta al <ul>
 Una vez que los elementos están **“seleccionados”** utilizamos **MÉTODOS** para poder modificarlos.
-* miVariable.innerHTML → puedo insertar otros elementos
-* miVariable.textContent→ inserto texto
-* miVariable.style→ inserta atributo “style” madifica estilos en linea
+* `miVariable.innerHTML` → puedo insertar otros elementos
+* `miVariable.textContent`→ inserto texto
+* `miVariable.style` → inserta atributo “style” madifica estilos en linea
 
 ### AGREGAR CLASES DESDE JS:
 classList es una propiedad de JS que sirve para manipular clases a un elemento del DOM:
-* miVariable.classList.add → agrega una clase
-* miVariable.classList.remove → quita una clase
-* miVariable.classList.toggle → busca una clase, si no la tiene la agrega, si la tiene la quita.
+* `miVariable.classList.add` → agrega una clase
+* `miVariable.classList.remove` → quita una clase
+* `miVariable.classList.toggle` → busca una clase, si no la tiene la agrega, si la tiene la quita.
 
 ### SCOPE
 Se considera el ámbito de alcance de una variables, si la variable se declara fuera de una función se puede reutilizar dentro de todas las funciones que se escriban luego.
@@ -578,7 +582,7 @@ Ej:
 
 ![image](./img/scope.png)
 
-En el ejemplo la variable “container” está declarada fuera de las funciones, por eso la puedo reutilizar en todas, caso contrario tendría que declararla dentro de cada función.
+En el ejemplo la variable `container` está declarada fuera de las funciones, por eso la puedo reutilizar en todas, caso contrario tendría que declararla dentro de cada función.
 
 ### EVENTOS
 Podemos definirlos como: Interacciones que realizan los usuarios finales.💻
@@ -586,7 +590,7 @@ Es la manera de controlar las acciones del usuario y definir un comportamiento d
 Evento = hacer click en un botón, escribir en un campo de texto, cambiar de página
 
 * **Tipo de Evento**: es el nombre del evento que ocurre (por ejemplo click). 
-Es un String con el nombre del tipo del evento ---> *“click” - “keypress”*
+Es un String con el nombre del tipo del evento --->`*“click” - “keypress”`
 * **Target del evento**: es el objeto al cual le ocurre el evento o que está asociado a dicho evento (puede ser cualquier nodo del html).
 * **Manejador de evento**: es una función (callback) que maneja o responde a un evento (Se lo conoce también como listener). función que se invoca cuando sucede el evento.
 
@@ -614,21 +618,22 @@ tercerBoton.addEventListener("click", () => {
 Este objeto es pasado como parámetro de la función que maneja el evento. 
 Las propiedades de este objeto cambian según el tipo de evento que sea. 
 Ejemplo: puedo saber que tecla se presiona o posición del mouse dependiendo del tipo de evento que maneje.
-**Lista de eventos que se pueden utilizar**:
-* onchange
-* onclick / ondblclick / onmousedown / onmousedownonmouseover / onmouseout
-* onkeydown / onkeypress / onkeyup
-* onload
-* onresize
-* onscroll
-* oninput
-* onfocus / onblur
 
-📢 Para indicarle a un objeto que tiene que suceder algo cuando el usuario realice un evento ese objeto tiene que estar *“selccionado”* en el js con querySelector(“#idDelObjeto”).
+**Lista de eventos que se pueden utilizar**:
+* `onchange`
+* `onclick / ondblclick / onmousedown / onmousedownonmouseover / onmouseout`
+* `onkeydown / onkeypress / onkeyup`
+* `onload`
+* `onresize`
+* `onscroll`
+* `oninput`
+* `onfocus / onblur`
+
+📢 Para indicarle a un objeto que tiene que suceder algo cuando el usuario realice un evento ese objeto tiene que estar *“selccionado”* en el js con `querySelector(“#idDelObjeto”)`.
  
 **stopPropagation** → evita la propagación del evento a objetos que que están dentro de un objeto al cual le indique que realice determinada acción ante un evento. Ejemplo si soy una indicación a un formulario, los elementos dentro de este, por propagación también realizarán esa indicación.
  
-**preventDefault** → evita que el elemento seleccionado realice la acción que por defecto realiza, Ejemplo, recarga de la página en el botón *submit*.
+**preventDefault** → evita que el elemento seleccionado realice la acción que por defecto realiza, Ejemplo, recarga de la página en el botón `submit`.
 
 ~~~
 event.stopPropagation();
