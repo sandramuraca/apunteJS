@@ -49,6 +49,10 @@ La idea es ir actualizandolo, e incorporar nuevos conceptos a medida que los vay
 
 * [FUNCIONES](#funciones)
 
+* [CLICLOS](#ciclos)
+    * While
+    * For
+
 * [DOM](#dom)
     - Selectores
     - Métodos
@@ -244,6 +248,9 @@ Porque todo lo que es *TEXTO ó STRING va entre comillas*, lo que es *NÚMERO* n
 
 ## TIPOS DE DATOS 📊:
 
+* Tipo de dato: contenido del valor.
+* Tipo de datos primitivos: no son objetos, contienen información y son inmutables:
+
 * `STRINGS` 📝: cadena de texto
 ~~~
 <script>
@@ -278,7 +285,7 @@ Los números pueden ser:
 ~~~
 ![image](./img/indefinido.png)
 
-* `NULL`: nulo = valor especial que representa "nada", "vacío" o "valor desconocido.
+* `NULL`: nulo = valor especial que representa "nada", "vacío" o "valor desconocido. Sin valor en absoluto
 * `NAN`: not a number, cuando queremos realizar una operación matemática con un dato que no es un número.
 
 ### COMILLAS PARA DECLARAR UNA VARIABLE:
@@ -341,16 +348,61 @@ Existen otros operadores, como el de potenciación, decremento e incremento.
 
 En construcción 🔧🔨🛠⚙
 
+Es una representación abstracta de una cosa que existe en la vida real.
+Esta cosa a su vez tiene propiedades, son las cosas que lo describen como tal. Ejemplo:
+
+![image](./img/objeto.png)
+
+Esta es una casa de color blanco, tipo chalet, tiene techo rojo, una ventana, un farol, una puerta y una chimenea, todo eso en JS se puede representar de la siguiente manera:
+~~~
+let casa = {
+    color : `blanco`,
+    tipo : `chalet`,
+    puerta : 1,
+    ventana : 1,
+    farol: 1,
+    chimenea: 1;
+    techo : rojo
+}
+~~~
+
+En este bloque de codigo se respeta la forma de escritura del string (con comillas) y números sin comillas.
+
+Entonces los objetos son variables, que continen elementos que se denominan propiedades, que tambien son variables, pero que estan relacionadas con el objeto.
+Para declarar una propiedad dentro de un objeto, cierro cada declaración con una coma (,) y el todas las propiedades de ese objeto se declaran entre llaves.
+
+*Ejemplo de objeto y como utilizar sus propiedades*: en este ejemplo le pedimos datos a un usuario mediante `prompts` sus respuestas las almacenamos en `variables` y esas variables las utilizamos luego en las `propiedades` del `objeto`, los datos que queremos mostrar en el `alert` los llamamos desde una `funcion` :
+~~~
+let nombreUsuario = prompt ("Ingrese su nombre");
+let edadUsuario = Number(prompt ("Ingrese su edad"));
+let nacUsuario = prompt ("ingrese su nacionalidad"); 
+
+function describirPersona (p) {
+    console.log(`${p.nombre} tiene ${p.edad} y su nacionalidad es ${p.nacionalidad}`);
+}
+
+let persona = {
+    nombre : nombreUsuario,
+    edad : edadUsuario,
+    nacionalidad : nacUsuario
+}
+describirPersona (persona);
+~~~
+
+### Links a Ejemplos:
+* [Objetos y arrays con objetos](https://github.com/sandramuraca/ejercicios_objetos)
+
 <a name="arrays"></a>
 🚩ARRAYS🚩
 
 Es una lista de elementos, que  tienen relación entre sí. 
 Se escriben entre corchetes [ ] → es un tipo de OBJETO.
 Es una forma de agrupar elementos (de cualquier tipo).
+Los elemtos de un array se separan por comas, y se escriben entre '', el arreglo tiene que tener un nombre y operador de asignacion para darle valor
 
 Ejemplo:
 
-Array FAMILY es el agrupamiento de las variables de cada integrante de la familia👇
+Array FAMILY es el agrupamiento de los *objetos* que representan a cada integrante de la familia👇
 ~~~
 const person1 = {
             name: `Sandra`,
@@ -358,19 +410,19 @@ const person1 = {
             age: 42 
         };
  
-        const person2 = {
+const person2 = {
             name: `Victoria`,
             surname: `Capella`,
             age: 13 
         };
  
-        const person3 = {
+const person3 = {
             name: `Cristian`,
             surname: `Rodriguez`,
             age: 40
         };
  
-        const family = [person1, person2, person3]
+const family = [person1, person2, person3]
 ~~~
 
 Los arrays tienen **“índices”** que es la posición de cada elemento que agrupa, el indice siempre arranca en 0.
@@ -390,7 +442,7 @@ console.log (family[0]); // aca llamamos al elemento, con todos us componentes, 
 
 Ese índice se utiliza para llamar a cualquiera de esos elementos desde la consola según su numeración.
 En los arrays importa el orden de los elementos.
-El potencial del arrays está con los **MÉTODOS** que viene por default con JS → son funcionalidades previamente programadas, el más utilizado es “push” →
+El potencial del arrays está con los **MÉTODOS** que viene por default con JS → son funcionalidades previamente programadas, por ejemplo “push” →
 nombreDeLaVariable.push()
 
 ~~~
@@ -405,6 +457,87 @@ nombreDeLaVariable.push()
 luego de haber agregado un elemeto más al array, se hacemos console.log:
 
 ![image](./img/array3.png)
+
+**Otros Métodos:**
+
+
+* Para para obtener el **dato de uno de los elementos del arreglo**, dentro del console.log llamo el nombre del arreglo y la posicion del elemento *(indice)* que quiero obtener entre corchetes:
+
+~~~
+ let colores = [ 'rojo', 'blanco', 'verde', 'amarillo' ];
+
+ console.log( colores[2]) // verde
+~~~
+
+* Podemos tener **arreglos anidados** (un arreglo dentro de otro), para obtener un elemento de un array que esta dentro de otro array, se indica con las primeras llaves la posicion del array y en las segundas llaves, la posicion del elemento que quiero obtener:
+~~~
+let arregloCosas = [
+    true,
+    123,
+    'Sandra',
+    [ 'manzana', 'pera', 'limon', 'naranja']
+];
+
+console.log(arregloCosas[3][1]); // pera
+~~~
+
+**.length**
+* Como obtener la cantidad de elemento del array:
+
+~~~
+let juegos = ['pacman', 'wonder boy', 'sugar rush', 'mario'];
+
+console.log('largo del array juegos: ', juegos.length); // largo del array juegos: 4
+~~~
+
+**.lenght-1**
+* Como objetener el primero y el último elemento del array:
+
+~~~
+let primero = juegos [0]; //para obetener el primero
+let ultimo = juegos[juegos.length-1]; //para obetener el ultimo
+console.log({ primero, ultimo}); // { primero: 'pacman', ultimo: 'mario'}  --> el console.log lo escribo entre corchetes para que el resultado me lo muestre como un objeto
+~~~
+
+**.unshifth**
+* Para agregar un elemento al principio del array:
+
+~~~
+juegos.unshift('Ralph');
+console.log(juegos);
+~~~
+
+**.push**
+* Para agregar un elemento al final del array:
+~~~
+juegos.push( 'tetris' );
+console.log (juegos); // ['pacman', 'wonder boy', 'sugar rush', 'mario', 'tetris']
+~~~
+
+**.pop**
+* Para borrar el ultimo elemento de un array:
+~~~
+let juegoBorrado = juegos.pop()
+console.log( {juegoBorrado, juegos} ); // { juegoBorrado: 'teris', juegos:['pacman', 'wonder boy', 'sugar rush', 'mario'] }
+~~~
+
+**.splice**
+* Para borrar un/unos elementos determinados:
+~~~
+let pos = 1; //indico posicion a partir de la cual quiero borrar
+let juegosEliminados = juegos.splice( pos, 2); //entre ()indico posicion y la cantidad de elementos a eliminar
+console.log({juegosEliminados, juegos}); // {juegosEliminados: ['pacman', 'wonder boy'], juegos: ['sugar rush', 'mario']}
+~~~
+
+**.indexOf**
+* Si quiero saber la posicion de un elemento:
+~~~
+let indexMario = juegos.indexOf('mario');// se debe escribir igual que en el array caseSensitive
+console.log({indexMario}); // {indexMario:2}
+~~~
+Si el indexOf regres -1 significa que no lo encontro, puede estar mal escrito
+
+
 
 <a name="control"></a>
 
@@ -544,6 +677,21 @@ function restar (num1, num2){
 * [Ejercitación Funciones](https://github.com/sandramuraca/ejercicios_funciones)
 
 ***
+
+<a name="ciclos"></a>
+
+### 🔴 CICLOS:
+
+EN CONTRUCCIÓN 🔧 ⛏ 🔨
+
+
+
+
+
+
+
+
+
 
 <a name="dom"></a>
 
