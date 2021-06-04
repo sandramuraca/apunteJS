@@ -535,7 +535,7 @@ console.log({juegosEliminados, juegos}); // {juegosEliminados: ['pacman', 'wonde
 let indexMario = juegos.indexOf('mario');// se debe escribir igual que en el array caseSensitive
 console.log({indexMario}); // {indexMario:2}
 ~~~
-Si el indexOf regres -1 significa que no lo encontro, puede estar mal escrito
+Si el indexOf regresa -1 significa que no lo encontro, puede estar mal escrito
 
 
 
@@ -717,7 +717,7 @@ Estos selectores corresponden a las siguientes etiquetas de un html:
 
 ![image](./img/dom2.png)
 
-Con el id estamos seleccionando al `h1`, con la clase al `p>}` y con la etiqueta al `ul`
+Con el id estamos seleccionando al `h1`, con la clase al `p` y con la etiqueta al `ul`
 Una vez que los elementos están **“seleccionados”** utilizamos **MÉTODOS** para poder modificarlos.
 * `miVariable.innerHTML` → puedo insertar otros elementos
 * `miVariable.textContent`→ inserto texto
