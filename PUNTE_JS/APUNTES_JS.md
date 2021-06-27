@@ -538,6 +538,10 @@ console.log({indexMario}); // {indexMario:2}
 Si el indexOf regresa -1 significa que no lo encontro, puede estar mal escrito
 
 
+**ARRAYS MULTIDIMENSIONALES - MATRICES**
+Cuando tendo un array dentro de otro.
+
+
 
 <a name="control"></a>
 
