@@ -17,3 +17,7 @@ Dejo aqui también los links a material utilizado para consulta:
 * asaditojs: @asaditojs
 * tina: @AgustinaLocke (publica usualmente cursos graty -como dice ella-)
 
+Otros links de itneres:
+* [TE LO EXPLICO CON GATITOS - Intro a la programación](https://teloexplicocongatitos.com/poster/tlecg05)
+* [JAVASCRIP-MANUAL](https://javascript.info/variables?map)
+* [ELOQUENT - JAVASCRIPT - ebook en Español](https://eloquentjs-es.thedojo.mx/)
