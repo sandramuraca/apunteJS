@@ -299,7 +299,7 @@ Las backticks se utilizan para una forma particular de *CONCATENAR*.
 
 ### Que es CONCATENAR?:
 Unir dos o más cadenas de texto y datos.
-Se puede concatenar con el signo + (opción 1), o utilizando ` ` y ${} (opción2)
+Se puede concatenar con el signo + (opción 1), o utilizando backticks (comillas inclinadas - alt+96) y ${} (opción2)
 Ejemplo:
 
 1. 
